@@ -2,11 +2,11 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className='flex justify-between py-7 px-14 text-xl bg-gradient-to-br from-gray-900 to-black'>
+    <div className='flex justify-center lg:justify-between py-7 px-14 text-xl bg-gradient-to-br from-gray-900 to-black'>
         <div>
             Make Your Meme now
         </div>
-        <div className='flex gap-14'>
+        <div className='lg:flex lg:gap-14 invisible lg:visible'>
             <div>
                 Instagram
             </div>
@@ -14,7 +14,7 @@ const NavBar = () => {
                 Facebook
             </div>
             <div>
-                X
+                <a href="https://x.com/lazyknight45">X</a>
             </div>
         </div>
     </div>

@@ -29,6 +29,7 @@ const Hero = () => {
                     sender:"other"
                 }, ...prevMessages])
         }
+        
     }
 
 
@@ -128,7 +129,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className=' rounded-xl bg-black w-100 px-2 relative'>
+        <div className=' rounded-xl bg-black w-100 px-2 flex flex-col h-[86vh] my-2 pb-2'>
             {/* Name */}
             <div className='flex justify-between'>
                 <div className='flex my-2'>
@@ -205,7 +206,7 @@ const Hero = () => {
             <div className='flex-grow overflow-y-auto p-2 space-y-2 flex flex-col-reverse justify-start'>
                 {messages.map((message,i)=>{
                     return(
-                        <div key={i} className={`flex ${message.sender==='me'?'justify-end':'justift-start'} py-1`}>
+                        <div key={i} className={`flex ${message.sender==='me'?'justify-end':'justify-start'} py-1`}>
                             <div className={`rounded-2xl px-2 py-1 max-w-[75%] shadow-md ${message.sender==='me'?'bg-blue-600 text-white':'bg-gray-800 text-white'}`}>
                                 {message.msg}
                             </div>
@@ -215,7 +216,7 @@ const Hero = () => {
             </div>
 
             {/* Message bar */}
-            <div className='flex justify-between bg-gray-900 rounded-full p-2 bottom-0 min-w-96'>
+            <div className='flex justify-between bg-gray-900 rounded-full p-2 min-w-96 mt-auto'>
                 <div className='flex'>
                     <div className='bg-rose-500 rounded-full p-1'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
